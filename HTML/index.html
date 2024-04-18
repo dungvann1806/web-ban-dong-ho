@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../CSS/Home.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.4.0-web/css/all.min.css">
+    
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="header">
+            <div class="logo">
+                <img src="../IMAGE/logo1.png" alt="">
+            </div>
+        </header>
+        <nav class="nav">
+            <div class="nav-menu">
+                <ul>
+                    <li><a class="link-to-another-page" href="../HTML/Home.html"  style="text-decoration: none; color: black;"">Home</a></li>
+                    <li><a class="link-to-another-page" href="../HTML/Home.html"  style="text-decoration: none; color: black;">Watch Man</a></li>
+                    <li><a class="link-to-another-page" href="../HTML/Home.html"  style="text-decoration: none; color: black;">Watch Ladies</a></li>
+                    <li><a class="link-to-another-page" href="../HTML/404.html"  style="text-decoration: none; color: black;">Blog</a></li>
+                    <li><a class="link-to-another-page" href="../HTML/Contact.html"  style="text-decoration: none; color: black;">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a class="link-to-another-page" href="../HTML/Register.html" style="text-decoration: none; color: black;">Sign in</a></li>
+                    <li><a class="link-to-another-page" href="../HTML/Login.html" style="text-decoration: none; color: black;">Log in</a></li>
+                    <li><a class="link-to-another-page" href="#" style="text-decoration: none; color: black;">Shopping Cart</a> <i class="fa-solid fa-cart-shopping"></i></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="spGoiY" >
+            <img class="mySlides" src="../IMAGE/silde1.avif">
+            <img class="mySlides" src="../IMAGE/silde2.avif">
+            <img class="mySlides" src="../IMAGE/slide3.avif">
+        </div>
+            <script>
+                var myIndex = 0;
+                carousel();
+                
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) {myIndex = 1}    
+                    x[myIndex-1].style.display = "block";  
+                    setTimeout(carousel, 2000); // Change image every 2 seconds
+                }
+            </script>
+        <section class="section">
+            <div class="about-top grid-1" style="display: flex; flex-direction: row; justify-content: space-around; margin-top: 30px; ">
+                <div class="col-4 about-left" >
+                    <figure class="effect-bubba">
+                        <img class="img-responsive" src="../IMAGE/mens.jpeg" alt=""/>
+                        <figcaption>
+                            <h2>Watch Man</h2>
+                            <p>Best watch for you!</p>
+                            <p>Come with us!</p>	
+                        </figcaption>			
+                    </figure>
+                </div>
+                <div class="col-4 about-left">
+                    <figure class="effect-bubba">
+                        <img class="img-responsive" src="../IMAGE/ladies.jpeg" alt=""/>
+                        <figcaption>
+                            <h4>Watch Ladies</h4>
+                            <p>Best watch for you!</p>
+                            <p>Come with us!</p>
+                        </figcaption>			
+                    </figure>
+                </div>
+                
+            </div>
+            <div class="PC">
+                <div class="top-content">
+                    <h2>Watch Man</h2>
+                    <a href="#" class="show-more" style="text-decoration: none;">Show more</a>
+                </div>
+                <div class="item">
+                    <div class="product">
+                        <a href="../HTML/Login.html"><img src="../IMAGE/watch1.jpeg" alt="" class="img-pro"></a>
+                        <div class="product-content">
+                            <h3>Citizen AN8201-57L</h3>
+                            <p>
+                            Loại máy : Quartz Chronograph <br>
+                            Đường kính : 46.5mm</p>
+                            <h4>$1500</h4>
+                        </div>
+                        <button class="select-item" >Select Item</button>
+                    </div>
+                    <div class="product">
+                        <a href="../HTML/Login.html"><img src="../IMAGE/watch2.jpeg" alt="" class="img-pro"></a>
+                        <div class="product-content">
+                            <h3>CITIZEN AN3681-57E</h3>
+                            <p>Loại máy : Quartz Chronograph <br>
+                                Đường kính : 44mm</p>
+                            <h4>$2000</h4>
+                        </div>
+                        <button class="select-item" >Select Item</button>
+                    </div>
+                    <div class="product">
+                        <a href="../HTML/Login.html"><img src="../IMAGE/watch3.jpeg" alt="" class="img-pro"></a>
+                        <div class="product-content">
+                            <h3>CITIZEN AN3680-50A</h3>
+                            <p>Loại máy : Quartz Chronograph <br>
+                                Đường kính : 44mm</p>
+                            <h4>$800</h4>
+                        </div>
+                        <button class="select-item" >Select Item</button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="lap">
+                <div class="top-content">
+                    <h2>Watch Ladies</h2>
+                    <a href="#" class="show-more" style="text-decoration: none;">Show more</a>
+                </div>
+                <div class="item">
+                    <div class="product">
+                        <a href="../HTML/Login.html"><img src="../IMAGE/watchladies7.avif" alt="" class="img-pro"></a>
+                        <div class="product-content">
+                            <h3>Casio LTP-V006L-4BUDF</h3>
+                            <p>Mặt Số 25mm <br>
+                                Kính Cứng   <br>
+                                Chống Nước 3ATM</p>
+                            <h4>$2000</h4>
+                        </div>
+                        <button class="select-item" >Select Item</button>
+                    </div><div class="product">
+                        <a href="../HTML/Login.html"><img src="../IMAGE/watchladies6.avif" alt="" class="img-pro"></a>
+                        <div class="product-content">
+                            <h3>Daniel Wellington Quadro DW00100434</h3>
+                            <p>Mặt số vuông hiện đại <br>
+                                Siêu mỏng chỉ 6mm</p>
+                            <h4>$1800</h4>
+                        </div>
+                        <button class="select-item" >Select Item</button>
+                    </div><div class="product">
+                        <a href="../HTML/Login.html"><img src="../IMAGE/watchalidies4.avif" alt="" class="img-pro"></a>
+                        <div class="product-content">
+                            <h3>Citizen EM0493-85P</h3>
+                            <p>Đính Pha Lê <br> Khảm Xà Cừ <br> Mạ Vàng PVD <br> Chống nước 3 ATM</p>
+                            <h4>$3000</h4>
+                        </div>
+                        <button class="select-item" >Select Item</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="logo">
+                <img src="../IMAGE/logo1.png" alt="">
+            </div>
+			<div class="footer-email">
+                <input type="email" placeholder="Enter your email">
+                <button>Submit</button>
+            </div>
+            <div class="info-website">
+                <div class="infor-left">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="#"><h6>Facebook</h6></a></li>
+                        <li><a href="#"><h6>Twitter</h6></a></li>
+                        <li><a href="#"><h6>Google+</h6></a></li>
+                    </ul>
+                </div>
+                <div class="infor-left">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="../HTML/404.html"><p>Specials</p></a></li>
+                        <li><a href="../HTML/404.html"><p>New Products</p></a></li>
+                        <li><a href="#"><p>Our Stores</p></a></li>
+                        <li><a href="../HTML/Contact.html"><p>Contact Us</p></a></li>
+                        <li><a href="../HTML/404.html"><p>Top Sellers</p></a></li>
+                    </ul>
+                </div>
+                <div class="infor-left">
+                    <h3>My Account</h3>
+                    <ul>
+                        <li><a href="../HTML/404.html"><p>My Account</p></a></li>
+                        <li><a href="../HTML/404.html"><p>My Credit slips</p></a></li>
+                        <li><a href="../HTML/404.html"><p>My Merchandise returns</p></a></li>
+                        <li><a href="../HTML/404.html"><p>My Personal info</p></a></li>
+                        <li><a href="../HTML/404.html"><p>My Addresses</p></a></li>
+                    </ul>
+                </div>
+                <div class="infor-left">
+                    <h3>Store Information</h3>
+                    <h4>VD-watchpro, <br> Somewhere, Somewhere</h4>
+                    <h5>+8412 345 5678</h5>	
+                    <a href="#">contact@example.com</a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
